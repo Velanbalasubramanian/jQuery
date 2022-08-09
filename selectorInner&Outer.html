@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      div {
+        height: 150px;
+        width: 200px;
+        background: orange;
+        padding: 20px;
+        border: 5px solid red;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Inner Outer  width Height</h1>
+    <div>Desinguraja Silambarasan</div>
+
+    <script src="js/jquery.js"></script>
+    <script>
+      $("document").ready(function () {
+        // Inner Height = element + padding 
+        console.log("innerheight:" +$("div").innerHeight());
+        console.log("innerwidth:" +$("div").innerWidth());
+        // Outer Height = element + padding + border
+        console.log("outerheight:" +$("div").outerHeight());
+        console.log("outerwidth:"+$("div").outerWidth());
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMAGES</title>
+  </head>
+  <body>
+    <img src="pic 1.jpg" width="300px" height="400px" />
+    <script src="/js/jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('img').click(function () {
+          var a = $(this).attr('src');
+          alert(a);
+        $(this).attr('src','pic 2.jpeg');
+        });
+      });
+
+      /* class with element selector na paragrapgh tag irukum aprm highlight tag irukum ithula class name mattum kudukama entha tag venumo atha kudukanum */
+    </script>
+  </body>
+</html>

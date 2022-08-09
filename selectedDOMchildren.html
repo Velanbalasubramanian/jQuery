@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+        li{
+            color:orange;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Children</h1>
+
+    <ul class="list">
+      <li>Graphic Designing</li>
+      <li>Web Designing</li>
+      <li>Programming</li>
+      <li>
+        <ul>
+          <li>C Program</li>
+          <li>C++ Program</li>
+          <li>Java</li>
+          <li>C#</li>
+        </ul>
+      </li>
+    </ul>
+    <script src="/js/jquery.js"></script>
+    <script>
+$("document").ready(function(){
+$("ul.list").children("li").css("color","green"); /* unordered list na athukulla irukura direct list mattum thn eduthukum athu peru thn children aprm athukulla mattum thn namma kudukra color tharum */ 
+});
+    </script>
+  </body>
+</html>
